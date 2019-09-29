@@ -1,0 +1,9 @@
+models/
+
+*.csv
+
+.ipynb_checkpoints/
+Existing als.ipynb
+__pycache__/
+model_saved_weights
+*.model
