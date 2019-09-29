@@ -9,6 +9,7 @@ import numpy as np
 from tqdm import tqdm
 
 from validation import Validator
+from preprocess import Preprocessor
 
 
 class ALS_helper:
@@ -70,7 +71,8 @@ class ALS_helper:
         
         return ratings_matrix
     
-
+prep = Preprocessor('ratings.csv')
+prep.process(0.4)
 mdl = ALS_helper()
 mdl.train()
 a,b = mdl.validate()
